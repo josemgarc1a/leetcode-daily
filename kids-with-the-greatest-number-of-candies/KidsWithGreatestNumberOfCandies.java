@@ -8,7 +8,7 @@ public class KidsWithGreatestNumberOfCandies {
         KidsWithGreatestNumberOfCandies.greatestNumberOfCandiesByKid(candiesPerKid, 3);
     }
 
-    private static List<Boolean> greatestNumberOfCandiesByKid(int[] candiesPerKid, int extraCandy) {
+    public static List<Boolean> greatestNumberOfCandiesByKid(int[] candiesPerKid, int extraCandy) {
         //calculate max
         int max = 0;
         for (int candies : candiesPerKid) {
@@ -20,7 +20,6 @@ public class KidsWithGreatestNumberOfCandies {
         for(int i=0; i<candiesPerKid.length; i++) {
             result.add(max <= candiesPerKid[i]+extraCandy);
         }
-        System.out.println(result);
         return result;
     }
     
